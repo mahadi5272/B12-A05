@@ -9,7 +9,7 @@
      <!-- tailwind css -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
+<body class="bg-[#daf4df]">
     <header>
         <nav class="flex justify-between max-w-6xl m-auto">
             <div class="flex">
@@ -39,8 +39,8 @@
             </div>
         </section>
     </header>
-    <main class="bg-[#daf4df] grid grid-cols-12">
-        <section class="card col-span-9 grid grid-cols-3 gap-3">
+    <main class="w-11/12 m-auto grid grid-cols-12 gap-3 mt-7 max-sm:flex-col">
+        <section class="cerd col-span-9 grid grid-cols-3 gap-3">
             <div class="bg-white rounded-lg ">
                 <div class="p-5">
                     <div class="flex justify-between ">
@@ -251,7 +251,15 @@
 
         </section>
         <aside class="col-span-3">
-            
+            <div class="flex justify-between  h-full bg-white rounded-lg">
+                <div class="mt-4 flex ">
+                    <img class="w-[24px] h-[24px]" src="../assets/clock-regular-full.svg" alt="">
+                    <span>Call History</span>
+                </div>
+                <div>
+                    <button class="bg-[#00A63E] rounded-3xl text-white flex justify-center items-center w-[114px] h-[52px]">Clear</button>
+                </div>
+            </div>
         </aside>
     </main>
 </body>
